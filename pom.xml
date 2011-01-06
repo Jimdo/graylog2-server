@@ -4,7 +4,7 @@
 
     <groupId>org.graylog2</groupId>
     <artifactId>graylog2-server</artifactId>
-    <version>0.9.3-jimdo</version>
+    <version>0.9.4-jimdo-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
