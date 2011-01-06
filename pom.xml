@@ -31,9 +31,9 @@
     </pluginRepositories>
 
     <scm>
-        <connection>scm:git:git@github.com:Jimdo/syslog4j.git</connection>
-        <developerConnection>scm:git:git@github.com:Jimdo/syslog4j.git</developerConnection>
-        <url>https://gtihub.com/Jimdo/syslog4j</url>
+        <connection>scm:git:git@github.com:Jimdo/graylog2-server.git</connection>
+        <developerConnection>scm:git:git@github.com:Jimdo/graylog2-server.git</developerConnection>
+        <url>https://gtihub.com/Jimdo/graylog2-server</url>
     </scm>
 
     <dependencies>
