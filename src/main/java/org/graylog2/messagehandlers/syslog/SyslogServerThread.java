@@ -54,6 +54,8 @@ public class SyslogServerThread extends Thread {
         
         syslogServer.getConfig().setPort(port);
         syslogServer.getConfig().addEventHandler(new SyslogEventHandler());
+        String useStructuredData = Main.masterConfig.getProperty("syslog_use_structured_data", "false");
+        syslogServer.getConfig().setUseStructuredData(Boolean.parseBoolean(useStructuredData));
 
         this.coreThread = syslogServer.getThread();
     }
