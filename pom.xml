@@ -32,6 +32,12 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <scm>
+        <connection>scm:git:git@github.com:Jimdo/graylog2-server.git</connection>
+        <developerConnection>scm:git:git@github.com:Jimdo/graylog2-server.git</developerConnection>
+        <url>https://gtihub.com/Jimdo/syslog4j</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -78,6 +84,11 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.1</version>
                 <configuration>
@@ -122,6 +133,14 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                      </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.scala-tools</groupId>
